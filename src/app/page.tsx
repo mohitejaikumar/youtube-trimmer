@@ -17,7 +17,7 @@ export default function Home() {
 
     setProcessing(true);
 
-    const response = await fetch('http://localhost:8080/download',{
+    const response = await fetch('https://youtube-trimmer-backend.vercel.app/download',{
       method: 'POST',
       body: JSON.stringify({youtubeUrl: url}),
        // Adding headers to the request 
